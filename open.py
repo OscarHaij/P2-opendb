@@ -17,8 +17,8 @@ def load_data(filename):
             quantity = int(row['quantity'])
             
             products.append(
-                {                   #dictionary
-                    "id": id,       #"keys" / nycklar : värde
+                {                   
+                    "id": id,       
                     "name": name,
                     "desc": desc,
                     "price": price,
