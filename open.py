@@ -45,3 +45,13 @@ os.system('cls')
 load_data('db_products.csv')
 
 print(get_products(products))
+
+def spec_product(what_id):
+
+    print(f"{products[what_id]['id']}. Product: {products[what_id]['name']} {products[what_id]['desc']} {locale.currency(products[what_id]['price'], grouping=True)}\n")
+
+    return
+
+while True:
+    what_id = int(input("\nvälj Id 0-10   "))
+    spec_product(what_id)
